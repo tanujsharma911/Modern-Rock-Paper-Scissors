@@ -11,7 +11,7 @@ A simple yet modern-looking Rock Paper Scissors game built with **HTML**, **CSS*
 
 ## Live Demo
 
-[Play the game here!](https://your-live-demo-link.com)
+[Play the game here!](https://tanujsharma911.github.io/Modern-Rock-Paper-Scissors)
 
 ## Technologies Used
 
