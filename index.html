@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+
+    <link rel="stylesheet" href="src/output.css">
+</head>
+
+<body class="overflow-hidden">
+    <div class="flex flex-col items-center justify-center w-screen h-screen z-10">
+        <h1 class="text-5xl mb-10 font-semibold">Rock, Paper & Scissors</h1>
+
+        <!-- Choices -->
+        <div class="flex gap-3">
+            <div class="option text-8xl hover:bg-gray-100 p-5 cursor-pointer rounded-2xl" title="Rock">
+                <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Raised%20Fist%20Light%20Skin%20Tone.png"
+                    alt="Raised Fist Light Skin Tone" width="100" height="100" />
+            </div>
+            <div class="option text-8xl hover:bg-gray-100 p-5 cursor-pointer rounded-2xl" title="Paper">
+                <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Hand%20with%20Fingers%20Splayed%20Light%20Skin%20Tone.png"
+                    alt="Hand with Fingers Splayed Light Skin Tone" width="100" height="100" />
+            </div>
+            <div class="option text-8xl hover:bg-gray-100 p-5 cursor-pointer rounded-2xl" title="Scissors">
+                <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Victory%20Hand%20Light%20Skin%20Tone.png"
+                    alt="Victory Hand Light Skin Tone" width="100" height="100" />
+            </div>
+        </div>
+
+        <div>
+            <p id="message" class="my-5 h-6 px-3 rounded-2xl">Waiting... for your choice</p>
+        </div>
+
+        <!-- Score Board -->
+        <div class="flex flex-col w-[50%] mt-10 gap-5 relative z-10">
+            <div id="userScoreBoard"
+                class="bg-blue-100 px-5 py-3 flex justify-between relative transition-transform duration-1000">
+                <p class="font-semibold">You</p>
+                <p class="font-semibold" id="userScore">0</p>
+                <span id="userWinning"
+                    class="absolute -top-3 left-3 bg-emerald-200 px-3 py-1 rounded-3xl text-xs opacity-0 transition-opacity duration-1000">Winning</span>
+            </div>
+            <div id="compScoreBoard"
+                class="bg-red-100 px-5 py-3 flex justify-between relative transition-transform duration-1000">
+                <p class="font-semibold">Computer</p>
+                <p class="font-semibold" id="compScore">0</p>
+                <span id="compWinning"
+                    class="absolute -top-3 left-3 bg-emerald-200 px-3 py-1 rounded-3xl text-xs opacity-0 transition-opacity duration-1000">Winning</span>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="src/scripts/sript.js"></script>
+</body>
+
+</html>
